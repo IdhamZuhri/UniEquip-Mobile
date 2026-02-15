@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New Club"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvHeaderSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new student organizations to the system"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etClubName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="e.g. Robotics Club"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Type"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spClubType"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advisor Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etAdvisorName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="Advisor Name"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@drawable/admin"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAdvisorStaffNo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="Staff ID Number"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@drawable/id"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAdvisorTel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_call"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAdvisorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnSaveClub"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Club"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#F5F5F5"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

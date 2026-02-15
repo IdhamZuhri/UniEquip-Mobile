@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage inventory, clubs, and requests"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#FF5252"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_manage"
+                        app:tint="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Equipment"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAddEquipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="+ Create New Equipment"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#FF5252"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnEquipmentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="View Inventory List"
+                    android:textColor="#FF5252"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#FFEBEE"
+                    app:cornerRadius="10dp"
+                    android:stateListAnimator="@null"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#26A69A"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_agenda"
+                        app:tint="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clubs"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegisterClub"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="+ Register New Club"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#26A69A"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnViewClubs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="View Club Directory"
+                    android:textColor="#009688"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#E0F2F1"
+                    app:cornerRadius="10dp"
+                    android:stateListAnimator="@null"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/purple_500"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        app:tint="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bookings &amp; Reports"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="16dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnManageBookings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Manage Booking Requests"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/purple_500"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Generate Reports"
+                    android:textColor="@color/purple_500"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#F2F3FF"
+                    app:cornerRadius="10dp"
+                    android:stateListAnimator="@null"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Logout"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:backgroundTint="#F5F5F5"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="20dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</ScrollView>

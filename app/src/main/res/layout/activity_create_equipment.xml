@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Equipment"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new items to the inventory system"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipment Name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEquipmentName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="e.g. Projector HD"
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:paddingStart="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Number / ID"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="e.g. Epson EB-X06"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Quantity"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTotalQty"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="e.g. 10"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_sort_by_size"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Save Equipment"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#F5F5F5"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

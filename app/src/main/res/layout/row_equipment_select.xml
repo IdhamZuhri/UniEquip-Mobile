@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEqName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipment Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:id="@+id/tvEqCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:text="|"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E0E0E0"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvEqModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEqStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available: 10"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:background="#E8F5E9"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textSize="11sp"
+                android:textColor="#9E9E9E"
+                android:layout_marginBottom="2dp"/>
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="0"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLength="3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "539701135208",
+    "project_id": "uniequip-87cab",
+    "storage_bucket": "uniequip-87cab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539701135208:android:1d76dbd30fc846455838dd",
+        "android_client_info": {
+          "package_name": "com.example.uniequip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0v3g075_CBDaIqLUjT3Og_WzYYUEMDoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

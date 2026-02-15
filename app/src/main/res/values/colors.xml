@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="gray_input">#F1F2F6</color>
+    <color name="gray_text">#888888</color>
+    <color name="teal_icon">#26A69A</color>
+    <color name="pink_icon">#FF5252</color>
+    <color name="gray_bg">#F5F5F5</color>
+    <color name="orange_btn">#FFA726</color>
+    <color name="green_pill">#10B981</color>
+    <color name="green_light_bg">#E8F5E9</color>
+</resources>

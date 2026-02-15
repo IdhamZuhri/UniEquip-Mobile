@@ -1,0 +1,10 @@
+<resources>
+    <string name="login_title">Login</string>
+    <string name="user_number">User Number</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="role_student">Student</string>
+    <string name="role_admin">Admin</string>
+    <string name="app_name">UniEquip</string>
+
+</resources>

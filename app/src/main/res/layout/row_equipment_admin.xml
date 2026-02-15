@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvEqName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipment Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvEqCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category: -"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvEqModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model: -"
+        android:layout_marginTop="2dp"/>
+
+    <!-- ✅ Total qty in database -->
+    <TextView
+        android:id="@+id/tvEqTotalQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Qty: 0"
+        android:layout_marginTop="6dp"/>
+
+    <!-- ✅ Physical in store now -->
+    <TextView
+        android:id="@+id/tvEqInStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Store: 0"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

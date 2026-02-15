@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_500"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Equipment"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update details or remove item"
+            android:textColor="#E1BEE7"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipment Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etEditEqName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="e.g. LCD Projector"
+                android:inputType="textCapWords"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/purple_500"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spEditEqCategory"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_rounded_input"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etEditEqModel"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="e.g. Epson-X500"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/purple_500"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Quantity"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etEditEqTotalQty"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="e.g. 10"
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawableStart="@android:drawable/ic_menu_sort_by_size"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/purple_500"
+                android:layout_marginBottom="32dp"/>
+
+            <Button
+                android:id="@+id/btnUpdateEquipment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Update Changes"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="@color/purple_500"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnDeleteEquipment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Delete Equipment"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#D32F2F"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Cancel"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F5F5F5"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
