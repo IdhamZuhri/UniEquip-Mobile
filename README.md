@@ -47,19 +47,3 @@ UniEquip Mobile solves this by:
 - **Backend:** Firebase Cloud Firestore  
 - **Tools:** Android Studio, Gradle  
 
----
-
-## 📷 Screenshots
-
-> Add your app screenshots here
-
-- Login Screen  
-- Student Dashboard  
-- Admin Dashboard  
-
----
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/IdhamZuhri/UniEquip-Mobile.git
